@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DACN_TBDD_TGDD", "DACN_TBDD_TGDD\DACN_TBDD_TGDD.csproj", "{ED8183B3-26DB-468B-AC1D-E9760E4C49BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED8183B3-26DB-468B-AC1D-E9760E4C49BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED8183B3-26DB-468B-AC1D-E9760E4C49BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED8183B3-26DB-468B-AC1D-E9760E4C49BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED8183B3-26DB-468B-AC1D-E9760E4C49BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5A3CF2BB-D4F6-4BC8-AB29-432DAD7E2290}
+	EndGlobalSection
+EndGlobal

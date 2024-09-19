@@ -1,0 +1,94 @@
+﻿@model IEnumerable<DACN_TBDD_TGDD.Models.OrderDetails>
+
+@{
+    ViewBag.Title = "View Order";
+
+    // Calculate total price
+    var totalPrice = Model.Sum(detail => detail.Price * detail.Quantity);
+}
+<style>
+    /* General Styles */
+    .container {
+        max-width: 960px; /* Adjust container width */
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    /* Table Styles */
+    .table {
+        border-radius: 0.5rem; /* Rounded corners */
+        overflow: hidden; /* Ensure rounded corners */
+    }
+
+        .table thead th {
+            background-color: #007bff; /* Blue header background */
+            color: #fff; /* White text color */
+            text-align: center; /* Center text */
+        }
+
+        .table tbody tr {
+            transition: background-color 0.3s; /* Smooth transition for hover effect */
+        }
+
+            .table tbody tr:hover {
+                background-color: #f1f1f1; /* Light gray background on hover */
+            }
+
+        .table th, .table td {
+            text-align: center; /* Center text in table cells */
+            vertical-align: middle; /* Vertically align text */
+        }
+
+    /* Total Price Styles */
+    .total-price {
+        margin-top: 20px; /* Space above the total price */
+        text-align: right; /* Align total price to the right */
+    }
+
+        .total-price h3 {
+            font-size: 1.5rem; /* Larger font size for emphasis */
+            color: #28a745; /* Green color for total price */
+        }
+
+</style>
+
+<h1>Order Details</h1>
+
+@if (Model == null || !Model.Any())
+{
+    <p>No details found for this order.</p>
+}
+else
+{
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Product ID</th>
+                <th>Product Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Evaluate</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var detail in Model)
+            {
+                <tr>
+                    <td>@detail.ProductId</td>
+                    <td>@detail.Product.Name</td> <!-- Assuming your ProductModel has a Name property -->
+                    <td>$@detail.Price</td>
+                    <td>@detail.Quantity</td>
+                    <td>
+                        <a href="@Url.Action("Details", "Product", new { id = detail.ProductId })" class="btn btn-primary">
+                            Evaluate
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div class="total-price">
+        <h3>Total Price: $@totalPrice</h3>
+    </div>
+}

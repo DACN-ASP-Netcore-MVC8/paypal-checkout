@@ -1,0 +1,28 @@
+﻿@model IEnumerable<DACN_TBDD_TGDD.Models.BrandModel>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var brand in Model)
+        {
+            <tr>
+                <td>@brand.Name</td>
+                <td>@brand.Description</td>
+                <td>@brand.Status</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@brand.Id" class="btn btn-warning">Edit</a>
+                    <form asp-controller="Brand" asp-action="Delete" asp-route-id="@brand.Id" method="post" style="display:inline" onsubmit="return confirm('Are you sure you want to delete this brand?');">
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,61 @@
+﻿
+<style>
+    .left-sidebar {
+        /* Adjust the width, padding, or other styles as needed */
+        width: 250px;
+        padding: 15px;
+    }
+
+        .left-sidebar h2 {
+            /* Change the font size, weight, and color for the headings */
+            font-size: 1.5rem; /* Adjust the size as needed */
+            font-weight: bold;
+            color: #333; /* Adjust the color as needed */
+            margin-bottom: 10px;
+        }
+
+    .panel-group.category-products {
+        /* Style for the category products panel */
+        border: 1px solid #ddd; /* Border color and style */
+        padding: 10px;
+        background-color: #f9f9f9; /* Background color */
+    }
+
+        .panel-group.category-products .panel-title {
+            /* Style for panel titles */
+            font-size: 1.2rem;
+            color: #555; /* Adjust the color as needed */
+        }
+
+    .brands_products {
+        /* Style for the brands products section */
+        border: 1px solid #ddd; /* Border color and style */
+        padding: 10px;
+        background-color: #f9f9f9; /* Background color */
+        margin-top: 20px; /* Margin between sections */
+    }
+
+        .brands_products h2 {
+            /* Change the font size, weight, and color for the brands heading */
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333; /* Adjust the color as needed */
+        }
+
+    
+
+</style>
+<div class="left-sidebar">
+    <h2>Category</h2>
+    <div class="panel-group category-products" id="accordian">
+        <!--category-products-->
+        <!-- Display component -->
+        <vc:categories></vc:categories>
+    </div><!--/category-products-->
+
+    <div class="brands_products">
+        <!--brands_products-->
+        <h2>Brands</h2>
+        <vc:brands></vc:brands>
+    </div><!--/brands_products-->
+</div>

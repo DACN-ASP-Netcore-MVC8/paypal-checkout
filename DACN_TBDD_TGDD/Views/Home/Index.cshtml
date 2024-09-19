@@ -1,0 +1,192 @@
+﻿@model IEnumerable<DACN_TBDD_TGDD.Models.ProductModel>
+<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.4/dist/sweetalert2.min.css" rel="stylesheet">
+<section id="slider">
+	<!--slider-->
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div id="slider-carousel" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#slider-carousel" data-slide-to="0" class="active"></li>
+						<li data-target="#slider-carousel" data-slide-to="1"></li>
+						<li data-target="#slider-carousel" data-slide-to="2"></li>
+					</ol>
+
+					<div class="carousel-inner">
+						<div class="item active">
+						</div>
+						<div class="item">
+							<div class="col-sm-12">
+								<img src="https://thebannercsi.com/wp-content/uploads/2022/09/appl-issue-1-lifestyles.jpg" width="100%" />
+							</div>
+
+						</div>
+
+						<div class="item">
+							<div class="col-sm-12">
+								<img src="https://vatvostudio.vn/wp-content/uploads/2023/01/GALAXY-S23-SERIES-LO-ANH-POSTER-TRUOC-NGAY-RA-MAT.jpg" width="100%" />
+							</div>
+						</div>
+						<div class="item">
+							<div class="col-sm-12">
+								<img src="https://img.freepik.com/premium-vector/detailed-laptop-rotated-position-mockup-gradient-banner-template-vector-illustration_541075-615.jpg" width="100%" />
+							</div>
+						</div>
+
+					</div>
+
+					<a href="#slider-carousel" class="left control-carousel hidden-xs" data-slide="prev">
+						<i class="fa fa-angle-left"></i>
+					</a>
+					<a href="#slider-carousel" class="right control-carousel hidden-xs" data-slide="next">
+						<i class="fa fa-angle-right"></i>
+					</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section><!--/slider-->
+
+<div class="col-sm-3">
+	@Html.Partial("_SidebarPartial")
+</div>
+
+<div class="col-sm-9 padding-right">
+	<div class="features_items">
+		<!--features_items-->
+		<h2 class="title text-center">Featured Products</h2>
+		<div class="col-md-12 text-right">
+			<div class="btn-group" role="group" aria-label="Sort Options">
+				<a asp-action="Index" asp-route-sortOrder="price_asc" class="btn btn-default @(ViewBag.CurrentSort == "price_asc" ? "active" : "")">
+					Price (Low to High)
+				</a>
+				<a asp-action="Index" asp-route-sortOrder="price_desc" class="btn btn-default @(ViewBag.CurrentSort == "price_desc" ? "active" : "")">
+					Price (High to Low)
+				</a>
+			</div>	
+		</div>
+		<br/>
+		@foreach (var item in Model)
+		{
+			<div class="col-sm-4">
+				<div class="product-image-wrapper">
+					<div class="single-products">
+						<a asp-action="Details" asp-controller="Product" asp-route-Id="@item.Id">
+							<div class="productinfo text-center">
+								<img src="~/images/@item.Image" alt="@item.Name" />
+								<h2>$@item.Price</h2>
+								<p>@item.Name</p>
+								
+								
+							</div>
+						</a>
+						<a class="btn btn-default add-to-cart" asp-action="Add" asp-controller="Cart" asp-route-Id="@item.Id">
+							<i class="fa fa-shopping-cart"></i> Add to cart
+						</a>
+					</div>
+					<div class="choose">
+						<ul class="nav nav-pills nav-justified">
+							<li><a href="#"><i class="fa fa-plus-square"></i> Add to wishlist</a></li>
+							<li><a href="#"><i class="fa fa-plus-square"></i> Add to compare</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		}
+		
+
+	</div><!--features_items-->
+
+</div>
+
+@if (ViewBag.Pager != null)
+{
+	<nav>
+		<ul class="pagination">
+			@if (ViewBag.Pager.CurrentPage > 1)
+			{
+				<li class="page-item">
+					<a class="page-link" asp-action="Index" asp-route-page="@(ViewBag.Pager.CurrentPage - 1)">Previous</a>
+				</li>
+			}
+			@for (int i = ViewBag.Pager.StartPage; i <= ViewBag.Pager.EndPage; i++)
+			{
+				<li class="page-item @(ViewBag.Pager.CurrentPage == i ? "active" : "")">
+					<a class="page-link" asp-action="Index" asp-route-page="@i">@i</a>
+				</li>
+			}
+			@if (ViewBag.Pager.CurrentPage < ViewBag.Pager.TotalPages)
+			{
+				<li class="page-item">
+					<a class="page-link" asp-action="Index" asp-route-page="@(ViewBag.Pager.CurrentPage + 1)">Next</a>
+				</li>
+			}
+		</ul>
+	</nav>
+}
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.4/dist/sweetalert2.all.min.js"></script>
+@if (TempData["SuccessMessage"] != null)
+{
+	<script>
+		Swal.fire({
+			title: 'Success!',
+			text: '@TempData["SuccessMessage"]',
+			icon: 'success',
+			confirmButtonText: 'OK'
+		});
+	</script>
+}
+@if (TempData["success"] != null)
+{
+	<script>
+		Swal.fire("Login Succsess!");
+	</script>
+}
+<script>
+@if (TempData["successCreated"] != null)
+{
+	
+	<text>
+		Swal.fire({
+		title: 'Success!',
+		text: '@TempData["successCreated"]',
+		icon: 'success',
+		confirmButtonText: 'OK'
+		});
+	</text>
+	
+}
+	</script>
+
+@if (TempData["successEditAccount"] != null)
+{
+	<script>
+		Swal.fire("User updated successfully.!");
+	</script>
+}
+@if (TempData["successChangePassword"] != null)
+{
+	<script>
+		Swal.fire("Your password has been changed successfully");
+	</script>
+}
+@if (TempData["successEdit"] != null)
+{
+	<script>
+		Swal.fire("Your profile has been updated successfully.");
+	</script>
+}
+@if (TempData["StockMessage"] != null)
+{
+	<script>
+		Swal.fire({
+			title: 'Out of Stock',
+			text: '@TempData["StockMessage"]',
+			icon: 'error',
+			confirmButtonText: 'OK'
+		});
+	</script>
+}
+
+

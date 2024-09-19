@@ -1,0 +1,325 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\thien\\Desktop\\DACN_TBDD_TGDD\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ED8183B3-26DB-468B-AC1D-E9760E4C49BA}|DACN_TBDD_TGDD\\DACN_TBDD_TGDD.csproj|c:\\users\\thien\\desktop\\dacn_tbdd_tgdd\\dacn_tbdd_tgdd\\areas\\admin\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED8183B3-26DB-468B-AC1D-E9760E4C49BA}|DACN_TBDD_TGDD\\DACN_TBDD_TGDD.csproj|solutionrelative:dacn_tbdd_tgdd\\areas\\admin\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED8183B3-26DB-468B-AC1D-E9760E4C49BA}|DACN_TBDD_TGDD\\DACN_TBDD_TGDD.csproj|c:\\users\\thien\\desktop\\dacn_tbdd_tgdd\\dacn_tbdd_tgdd\\views\\checkout\\vieworder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED8183B3-26DB-468B-AC1D-E9760E4C49BA}|DACN_TBDD_TGDD\\DACN_TBDD_TGDD.csproj|solutionrelative:dacn_tbdd_tgdd\\views\\checkout\\vieworder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED8183B3-26DB-468B-AC1D-E9760E4C49BA}|DACN_TBDD_TGDD\\DACN_TBDD_TGDD.csproj|c:\\users\\thien\\desktop\\dacn_tbdd_tgdd\\dacn_tbdd_tgdd\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{ED8183B3-26DB-468B-AC1D-E9760E4C49BA}|DACN_TBDD_TGDD\\DACN_TBDD_TGDD.csproj|solutionrelative:dacn_tbdd_tgdd\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED8183B3-26DB-468B-AC1D-E9760E4C49BA}|DACN_TBDD_TGDD\\DACN_TBDD_TGDD.csproj|c:\\users\\thien\\desktop\\dacn_tbdd_tgdd\\dacn_tbdd_tgdd\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{ED8183B3-26DB-468B-AC1D-E9760E4C49BA}|DACN_TBDD_TGDD\\DACN_TBDD_TGDD.csproj|solutionrelative:dacn_tbdd_tgdd\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED8183B3-26DB-468B-AC1D-E9760E4C49BA}|DACN_TBDD_TGDD\\DACN_TBDD_TGDD.csproj|c:\\users\\thien\\desktop\\dacn_tbdd_tgdd\\dacn_tbdd_tgdd\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED8183B3-26DB-468B-AC1D-E9760E4C49BA}|DACN_TBDD_TGDD\\DACN_TBDD_TGDD.csproj|solutionrelative:dacn_tbdd_tgdd\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED8183B3-26DB-468B-AC1D-E9760E4C49BA}|DACN_TBDD_TGDD\\DACN_TBDD_TGDD.csproj|c:\\users\\thien\\desktop\\dacn_tbdd_tgdd\\dacn_tbdd_tgdd\\areas\\admin\\views\\order\\revenuetoday.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED8183B3-26DB-468B-AC1D-E9760E4C49BA}|DACN_TBDD_TGDD\\DACN_TBDD_TGDD.csproj|solutionrelative:dacn_tbdd_tgdd\\areas\\admin\\views\\order\\revenuetoday.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED8183B3-26DB-468B-AC1D-E9760E4C49BA}|DACN_TBDD_TGDD\\DACN_TBDD_TGDD.csproj|c:\\users\\thien\\desktop\\dacn_tbdd_tgdd\\dacn_tbdd_tgdd\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED8183B3-26DB-468B-AC1D-E9760E4C49BA}|DACN_TBDD_TGDD\\DACN_TBDD_TGDD.csproj|solutionrelative:dacn_tbdd_tgdd\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED8183B3-26DB-468B-AC1D-E9760E4C49BA}|DACN_TBDD_TGDD\\DACN_TBDD_TGDD.csproj|c:\\users\\thien\\desktop\\dacn_tbdd_tgdd\\dacn_tbdd_tgdd\\views\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED8183B3-26DB-468B-AC1D-E9760E4C49BA}|DACN_TBDD_TGDD\\DACN_TBDD_TGDD.csproj|solutionrelative:dacn_tbdd_tgdd\\views\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED8183B3-26DB-468B-AC1D-E9760E4C49BA}|DACN_TBDD_TGDD\\DACN_TBDD_TGDD.csproj|c:\\users\\thien\\desktop\\dacn_tbdd_tgdd\\dacn_tbdd_tgdd\\views\\shared\\_footerpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED8183B3-26DB-468B-AC1D-E9760E4C49BA}|DACN_TBDD_TGDD\\DACN_TBDD_TGDD.csproj|solutionrelative:dacn_tbdd_tgdd\\views\\shared\\_footerpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED8183B3-26DB-468B-AC1D-E9760E4C49BA}|DACN_TBDD_TGDD\\DACN_TBDD_TGDD.csproj|c:\\users\\thien\\desktop\\dacn_tbdd_tgdd\\dacn_tbdd_tgdd\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED8183B3-26DB-468B-AC1D-E9760E4C49BA}|DACN_TBDD_TGDD\\DACN_TBDD_TGDD.csproj|solutionrelative:dacn_tbdd_tgdd\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED8183B3-26DB-468B-AC1D-E9760E4C49BA}|DACN_TBDD_TGDD\\DACN_TBDD_TGDD.csproj|c:\\users\\thien\\desktop\\dacn_tbdd_tgdd\\dacn_tbdd_tgdd\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED8183B3-26DB-468B-AC1D-E9760E4C49BA}|DACN_TBDD_TGDD\\DACN_TBDD_TGDD.csproj|solutionrelative:dacn_tbdd_tgdd\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED8183B3-26DB-468B-AC1D-E9760E4C49BA}|DACN_TBDD_TGDD\\DACN_TBDD_TGDD.csproj|c:\\users\\thien\\desktop\\dacn_tbdd_tgdd\\dacn_tbdd_tgdd\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED8183B3-26DB-468B-AC1D-E9760E4C49BA}|DACN_TBDD_TGDD\\DACN_TBDD_TGDD.csproj|solutionrelative:dacn_tbdd_tgdd\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED8183B3-26DB-468B-AC1D-E9760E4C49BA}|DACN_TBDD_TGDD\\DACN_TBDD_TGDD.csproj|c:\\users\\thien\\desktop\\dacn_tbdd_tgdd\\dacn_tbdd_tgdd\\views\\brand\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED8183B3-26DB-468B-AC1D-E9760E4C49BA}|DACN_TBDD_TGDD\\DACN_TBDD_TGDD.csproj|solutionrelative:dacn_tbdd_tgdd\\views\\brand\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED8183B3-26DB-468B-AC1D-E9760E4C49BA}|DACN_TBDD_TGDD\\DACN_TBDD_TGDD.csproj|c:\\users\\thien\\desktop\\dacn_tbdd_tgdd\\dacn_tbdd_tgdd\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED8183B3-26DB-468B-AC1D-E9760E4C49BA}|DACN_TBDD_TGDD\\DACN_TBDD_TGDD.csproj|solutionrelative:dacn_tbdd_tgdd\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED8183B3-26DB-468B-AC1D-E9760E4C49BA}|DACN_TBDD_TGDD\\DACN_TBDD_TGDD.csproj|c:\\users\\thien\\desktop\\dacn_tbdd_tgdd\\dacn_tbdd_tgdd\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED8183B3-26DB-468B-AC1D-E9760E4C49BA}|DACN_TBDD_TGDD\\DACN_TBDD_TGDD.csproj|solutionrelative:dacn_tbdd_tgdd\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED8183B3-26DB-468B-AC1D-E9760E4C49BA}|DACN_TBDD_TGDD\\DACN_TBDD_TGDD.csproj|c:\\users\\thien\\desktop\\dacn_tbdd_tgdd\\dacn_tbdd_tgdd\\controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED8183B3-26DB-468B-AC1D-E9760E4C49BA}|DACN_TBDD_TGDD\\DACN_TBDD_TGDD.csproj|solutionrelative:dacn_tbdd_tgdd\\controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED8183B3-26DB-468B-AC1D-E9760E4C49BA}|DACN_TBDD_TGDD\\DACN_TBDD_TGDD.csproj|c:\\users\\thien\\desktop\\dacn_tbdd_tgdd\\dacn_tbdd_tgdd\\models\\cartmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED8183B3-26DB-468B-AC1D-E9760E4C49BA}|DACN_TBDD_TGDD\\DACN_TBDD_TGDD.csproj|solutionrelative:dacn_tbdd_tgdd\\models\\cartmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED8183B3-26DB-468B-AC1D-E9760E4C49BA}|DACN_TBDD_TGDD\\DACN_TBDD_TGDD.csproj|c:\\users\\thien\\desktop\\dacn_tbdd_tgdd\\dacn_tbdd_tgdd\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED8183B3-26DB-468B-AC1D-E9760E4C49BA}|DACN_TBDD_TGDD\\DACN_TBDD_TGDD.csproj|solutionrelative:dacn_tbdd_tgdd\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED8183B3-26DB-468B-AC1D-E9760E4C49BA}|DACN_TBDD_TGDD\\DACN_TBDD_TGDD.csproj|c:\\users\\thien\\desktop\\dacn_tbdd_tgdd\\dacn_tbdd_tgdd\\areas\\admin\\controllers\\brandcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED8183B3-26DB-468B-AC1D-E9760E4C49BA}|DACN_TBDD_TGDD\\DACN_TBDD_TGDD.csproj|solutionrelative:dacn_tbdd_tgdd\\areas\\admin\\controllers\\brandcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ViewOrder.cshtml",
+              "DocumentMoniker": "C:\\Users\\thien\\Desktop\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\Views\\Checkout\\ViewOrder.cshtml",
+              "RelativeDocumentMoniker": "DACN_TBDD_TGDD\\Views\\Checkout\\ViewOrder.cshtml",
+              "ToolTip": "C:\\Users\\thien\\Desktop\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\Views\\Checkout\\ViewOrder.cshtml",
+              "RelativeToolTip": "DACN_TBDD_TGDD\\Views\\Checkout\\ViewOrder.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-11T08:24:14.57Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\thien\\Desktop\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "DACN_TBDD_TGDD\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "ToolTip": "C:\\Users\\thien\\Desktop\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "DACN_TBDD_TGDD\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "ViewState": "AQIAAHsAAAAAAAAAAAAAAJAAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-11T06:43:53.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RevenueToday.cshtml",
+              "DocumentMoniker": "C:\\Users\\thien\\Desktop\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\Areas\\Admin\\Views\\Order\\RevenueToday.cshtml",
+              "RelativeDocumentMoniker": "DACN_TBDD_TGDD\\Areas\\Admin\\Views\\Order\\RevenueToday.cshtml",
+              "ToolTip": "C:\\Users\\thien\\Desktop\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\Areas\\Admin\\Views\\Order\\RevenueToday.cshtml",
+              "RelativeToolTip": "DACN_TBDD_TGDD\\Areas\\Admin\\Views\\Order\\RevenueToday.cshtml",
+              "ViewState": "AQIAAHgAAAAAAAAAAAAAABAAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-09T10:06:05.158Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\thien\\Desktop\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\appsettings.json",
+              "RelativeDocumentMoniker": "DACN_TBDD_TGDD\\appsettings.json",
+              "ToolTip": "C:\\Users\\thien\\Desktop\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\appsettings.json",
+              "RelativeToolTip": "DACN_TBDD_TGDD\\appsettings.json",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAABgAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-09T07:49:00.789Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\thien\\Desktop\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "DACN_TBDD_TGDD\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\thien\\Desktop\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\appsettings.Development.json",
+              "RelativeToolTip": "DACN_TBDD_TGDD\\appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-09T07:48:53.334Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\thien\\Desktop\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "DACN_TBDD_TGDD\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\thien\\Desktop\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "DACN_TBDD_TGDD\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFUAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-08T12:25:07.351Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_FooterPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\thien\\Desktop\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\Views\\Shared\\_FooterPartial.cshtml",
+              "RelativeDocumentMoniker": "DACN_TBDD_TGDD\\Views\\Shared\\_FooterPartial.cshtml",
+              "ToolTip": "C:\\Users\\thien\\Desktop\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\Views\\Shared\\_FooterPartial.cshtml",
+              "RelativeToolTip": "DACN_TBDD_TGDD\\Views\\Shared\\_FooterPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-08T12:22:29.967Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\thien\\Desktop\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\Views\\Brand\\Index.cshtml",
+              "RelativeDocumentMoniker": "DACN_TBDD_TGDD\\Views\\Brand\\Index.cshtml",
+              "ToolTip": "C:\\Users\\thien\\Desktop\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\Views\\Brand\\Index.cshtml",
+              "RelativeToolTip": "DACN_TBDD_TGDD\\Views\\Brand\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-08T12:16:52.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\thien\\Desktop\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\Views\\Cart\\Index.cshtml",
+              "RelativeDocumentMoniker": "DACN_TBDD_TGDD\\Views\\Cart\\Index.cshtml",
+              "ToolTip": "C:\\Users\\thien\\Desktop\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\Views\\Cart\\Index.cshtml",
+              "RelativeToolTip": "DACN_TBDD_TGDD\\Views\\Cart\\Index.cshtml",
+              "ViewState": "AQIAAJ8AAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-08T12:09:57.503Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\thien\\Desktop\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "DACN_TBDD_TGDD\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\thien\\Desktop\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "DACN_TBDD_TGDD\\Views\\Account\\Login.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-08T12:04:56.559Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\thien\\Desktop\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "DACN_TBDD_TGDD\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\thien\\Desktop\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "DACN_TBDD_TGDD\\Controllers\\LoginController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T12:02:45.629Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CartModel.cs",
+              "DocumentMoniker": "C:\\Users\\thien\\Desktop\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\Models\\CartModel.cs",
+              "RelativeDocumentMoniker": "DACN_TBDD_TGDD\\Models\\CartModel.cs",
+              "ToolTip": "C:\\Users\\thien\\Desktop\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\Models\\CartModel.cs",
+              "RelativeToolTip": "DACN_TBDD_TGDD\\Models\\CartModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T10:51:43.932Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\thien\\Desktop\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\Program.cs",
+              "RelativeDocumentMoniker": "DACN_TBDD_TGDD\\Program.cs",
+              "ToolTip": "C:\\Users\\thien\\Desktop\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\Program.cs",
+              "RelativeToolTip": "DACN_TBDD_TGDD\\Program.cs",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAAAFEAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T10:49:09.979Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\thien\\Desktop\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "DACN_TBDD_TGDD\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\thien\\Desktop\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "DACN_TBDD_TGDD\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAMQAAAAAAAAAAAAAANMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T10:47:19.556Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "C:\\Users\\thien\\Desktop\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "DACN_TBDD_TGDD\\Controllers\\CartController.cs",
+              "ToolTip": "C:\\Users\\thien\\Desktop\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\Controllers\\CartController.cs",
+              "RelativeToolTip": "DACN_TBDD_TGDD\\Controllers\\CartController.cs",
+              "ViewState": "AQIAAC0BAAAAAAAAAAAiwEEBAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T10:39:56.952Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CheckoutController.cs",
+              "DocumentMoniker": "C:\\Users\\thien\\Desktop\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\Controllers\\CheckoutController.cs",
+              "RelativeDocumentMoniker": "DACN_TBDD_TGDD\\Controllers\\CheckoutController.cs",
+              "ToolTip": "C:\\Users\\thien\\Desktop\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\Controllers\\CheckoutController.cs",
+              "RelativeToolTip": "DACN_TBDD_TGDD\\Controllers\\CheckoutController.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAQwG4AAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T10:39:43.042Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\thien\\Desktop\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "DACN_TBDD_TGDD\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\thien\\Desktop\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "DACN_TBDD_TGDD\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAAAFUAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-08T10:32:55.858Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\thien\\Desktop\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\Views\\Product\\Details.cshtml",
+              "RelativeDocumentMoniker": "DACN_TBDD_TGDD\\Views\\Product\\Details.cshtml",
+              "ToolTip": "C:\\Users\\thien\\Desktop\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\Views\\Product\\Details.cshtml",
+              "RelativeToolTip": "DACN_TBDD_TGDD\\Views\\Product\\Details.cshtml",
+              "ViewState": "AQIAADEAAAAAAAAAAAAAAEUAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-08T10:30:02.63Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "BrandController.cs",
+              "DocumentMoniker": "C:\\Users\\thien\\Desktop\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\Areas\\Admin\\Controllers\\BrandController.cs",
+              "RelativeDocumentMoniker": "DACN_TBDD_TGDD\\Areas\\Admin\\Controllers\\BrandController.cs",
+              "ToolTip": "C:\\Users\\thien\\Desktop\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\Areas\\Admin\\Controllers\\BrandController.cs",
+              "RelativeToolTip": "DACN_TBDD_TGDD\\Areas\\Admin\\Controllers\\BrandController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T10:28:01.332Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

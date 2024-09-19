@@ -1,0 +1,91 @@
+﻿@model LoginViewModel
+
+@{
+    ViewData["Title"] = "Login";
+}
+<head>
+    <!-- SweetAlert2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+</body>
+
+
+<section id="login-form">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="login-form">
+                    <h2 class="text-center mb-4">Login to Your Account</h2>
+                    <form asp-action="Login" asp-controller="Account" method="post">
+                        <div class="form-group">
+                            <label asp-for="UserName" class="form-label">Username</label>
+                            <input asp-for="UserName" class="form-control" placeholder="Enter your username" />
+                            <span asp-validation-for="UserName" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="Password" class="form-label">Password</label>
+                            <input asp-for="Password" type="password" class="form-control" placeholder="Enter your password" />
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">Login</button>
+                        <div class="text-center mt-3">
+                            <a asp-action="Create" asp-controller="Account" class="btn btn-link">Register</a>
+                            <a asp-action="ForgotPassword" asp-controller="Account" class="btn btn-link">Forgot Password?</a>
+                        </div>
+                    </form>
+                </div><!--/login form-->
+            </div>
+        </div>
+    </div>
+</section>
+<!--/login form-->
+@section Scripts
+{
+       
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+        @if (TempData["ErrorMessageUser"] != null)
+        {
+            <text>
+                    Swal.fire({
+                        title: 'Error!',
+                        text: '@TempData["ErrorMessageUser"]',
+                        icon: 'error',
+                        confirmButtonText: 'OK'
+                    });
+            </text>
+        }
+
+        @if (TempData["success"] != null)
+        {
+            <text>
+                    Swal.fire({
+                        title: 'Success!',
+                        text: '@TempData["success"]',
+                        icon: 'success',
+                        confirmButtonText: 'OK'
+                    });
+            </text>
+        }
+
+        @if (TempData["error"] != null)
+        {
+            <text>
+                    Swal.fire({
+                        title: 'Error!',
+                        text: '@TempData["error"]',
+                        icon: 'error',
+                        confirmButtonText: 'OK'
+                    });
+            </text>
+        }
+                });
+    </script>
+     await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
+

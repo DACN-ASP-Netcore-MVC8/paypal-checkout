@@ -1,0 +1,111 @@
+﻿@model IEnumerable<dynamic>
+
+@{
+    ViewData["Title"] = "User List";
+}
+<style>
+    h2 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .btn-sm {
+        font-size: 0.9rem;
+    }
+
+    .table {
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+
+    .table-responsive {
+        margin-bottom: 20px;
+    }
+
+    .table-striped tbody tr:nth-of-type(odd) {
+        background-color: rgba(0, 0, 0, 0.05); /* For better stripe visibility */
+    }
+
+    .table-hover tbody tr:hover {
+        background-color: rgba(0, 0, 0, 0.1); /* Hover effect */
+    }
+</style>
+
+<h2 class="my-4 text-center">User List</h2>
+
+<p>
+    <a asp-action="Create" asp-controller="User" class="btn btn-primary mb-3">Create New User</a>
+</p>
+
+<div class="table-responsive">
+    <table class="table table-striped table-hover table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>ID</th>
+                <th>User</th>
+                <th>Email</th>
+                <th>Birthday</th>
+                <th>Street</th>
+                <th>Phone</th>
+                <th>Role</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var userWithRoles in Model)
+            {
+                <tr>
+                    <td>@userWithRoles.User.Id</td>
+                    <td>@userWithRoles.User.UserName</td>
+                    <td>@userWithRoles.User.Email</td>
+                    <td>@userWithRoles.User.BirthDate?.ToString("yyyy-MM-dd")</td>
+                    <td>@userWithRoles.User.Address</td>
+                    <td>@userWithRoles.User.PhoneNumber</td>
+                    <td>@userWithRoles.RoleName</td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@userWithRoles.User.Id" asp-controller="User" class="btn btn-warning btn-sm me-1">Edit</a>
+                        <form asp-action="DeleteConfirmed" method="post" style="display:inline;" onsubmit="return confirm('Are you sure you want to delete this user?');">
+                            @Html.AntiForgeryToken()
+                            <input type="hidden" name="id" value="@userWithRoles.User.Id" />
+                            <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@section Scripts {
+    <script>
+        function confirmDelete() {
+            return confirm('Are you sure you want to delete this user?');
+        }
+    </script>
+}
+
+@if (ViewBag.Pager != null)
+{
+    <nav>
+        <ul class="pagination">
+            @if (ViewBag.Pager.CurrentPage > 1)
+            {
+                <li class="page-item">
+                    <a class="page-link" asp-action="Index" asp-route-page="@(ViewBag.Pager.CurrentPage - 1)">Previous</a>
+                </li>
+            }
+            @for (int i = ViewBag.Pager.StartPage; i <= ViewBag.Pager.EndPage; i++)
+            {
+                <li class="page-item @(ViewBag.Pager.CurrentPage == i ? "active" : "")">
+                    <a class="page-link" asp-action="Index" asp-route-page="@i">@i</a>
+                </li>
+            }
+            @if (ViewBag.Pager.CurrentPage < ViewBag.Pager.TotalPages)
+            {
+                <li class="page-item">
+                    <a class="page-link" asp-action="Index" asp-route-page="@(ViewBag.Pager.CurrentPage + 1)">Next</a>
+                </li>
+            }
+        </ul>
+    </nav>
+}

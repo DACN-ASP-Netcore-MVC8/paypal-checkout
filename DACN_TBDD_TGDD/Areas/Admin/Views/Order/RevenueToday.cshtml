@@ -1,0 +1,143 @@
+﻿@model DACN_TBDD_TGDD.Areas.Admin.Models.ViewModels.RevenueTodayViewModel
+@{
+    ViewData["Title"] = "Today's Revenue";
+    var today = DateTime.Today.ToString("MMMM dd, yyyy"); // Format today's date
+}
+
+<h1>Today's Revenue - @today</h1>
+
+<!-- Optional: Bootstrap for better styling -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<style>
+    .revenue-table {
+        width: 100%;
+        margin-top: 20px;
+        border-collapse: collapse;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .revenue-table th, .revenue-table td {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .revenue-table thead th {
+        background-color: #343a40;
+        color: white;
+        font-size: 1.5em;
+    }
+
+    .revenue-table tbody tr:nth-child(even) {
+        background-color: #f8f9fa;
+    }
+
+    .revenue-table tbody tr:nth-child(odd) {
+        background-color: #ffffff;
+    }
+
+    .highlight-row td {
+        font-weight: bold;
+        background-color: #d1e7dd;
+    }
+
+    
+    
+</style>
+
+<div class="table-responsive">
+    <table class="table revenue-table">
+        <thead>
+            <tr>
+                <th>Total Revenue</th>
+                <th>Number of Successful Orders</th>
+                <th>Product</th>
+                <th>Quantity Sold</th>
+                <th>Quantity in Stock</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="highlight-row">
+                <td>@Model.TotalRevenue.ToString("C", System.Globalization.CultureInfo.GetCultureInfo("en-US"))</td>
+                <td>@Model.OrderCount</td>
+                <td colspan="3"></td>
+                <td>@DateTime.Today.ToString("MMMM dd, yyyy")</td>
+            </tr>
+            @foreach (var productSale in Model.ProductSales)
+            {
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>@productSale.Value.ProductName</td>
+                    <td>@productSale.Value.SoldQuantity</td>
+                    <td>@productSale.Value.Stock</td>
+                    <td></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<!-- Chart Container -->
+<div id="chartContainer">
+    <canvas id="revenueChart" width="400" height="200"></canvas>
+</div>
+
+@section Scripts
+{
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Data for Chart.js
+            var productNames = @Html.Raw(Json.Serialize(Model.ProductSales.Select(p => p.Value.ProductName).ToList()));
+            var soldQuantities = @Html.Raw(Json.Serialize(Model.ProductSales.Select(p => p.Value.SoldQuantity).ToList()));
+            var stockQuantities = @Html.Raw(Json.Serialize(Model.ProductSales.Select(p => p.Value.Stock).ToList()));
+
+            // Initialize Chart.js
+            var ctx = document.getElementById('revenueChart').getContext('2d');
+            var revenueChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: productNames,
+                    datasets: [
+                        {
+                            label: 'Sold Quantity',
+                            data: soldQuantities,
+                            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                            borderColor: 'rgba(54, 162, 235, 1)',
+                            borderWidth: 1
+                        },
+                        {
+                            label: 'Stock Quantity',
+                            data: stockQuantities,
+                            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                            borderColor: 'rgba(75, 192, 192, 1)',
+                            borderWidth: 1
+                        }
+                    ]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    },
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            display: true,
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function (tooltipItem) {
+                                    return tooltipItem.dataset.label + ': ' + tooltipItem.raw;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+}

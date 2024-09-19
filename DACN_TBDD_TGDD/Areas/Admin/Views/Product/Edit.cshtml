@@ -1,0 +1,82 @@
+﻿@model DACN_TBDD_TGDD.Models.ProductModel
+
+@{
+    ViewData["Title"] = "Edit Product";
+}
+
+<h4>Edit Product</h4>
+
+<form asp-action="Edit" enctype="multipart/form-data">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <div class="form-group">
+        <label asp-for="Name" class="control-label">Name</label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Price" class="control-label">Price</label>
+        <input asp-for="Price" type="number" step="0.01" class="form-control" />
+        <span asp-validation-for="Price" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Description" class="control-label">Description</label>
+        <textarea asp-for="Description" class="form-control" id="Description"></textarea>
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Stock" class="control-label">Stock</label>
+        <textarea asp-for="Stock" class="form-control" id="Description"></textarea>
+        <span asp-validation-for="Stock" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="CategoryId" class="control-label">Category</label>
+        <select asp-for="CategoryId" class="form-control" asp-items="ViewBag.Categories">
+            <option value="">--Choose a category--</option>
+        </select>
+        <span asp-validation-for="CategoryId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="BrandId" class="control-label">Brand</label>
+        <select asp-for="BrandId" class="form-control" asp-items="ViewBag.Brands">
+            <option value="">--Choose a brand--</option>
+        </select>
+        <span asp-validation-for="BrandId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="ImageUpload" class="control-label">Image (Optional)</label>
+        <input asp-for="ImageUpload" type="file" class="form-control" />
+        <span asp-validation-for="ImageUpload" class="text-danger"></span>
+        
+        <!-- Hiển thị ảnh hiện tại nếu có -->
+        @if (!string.IsNullOrEmpty(Model.Image))
+        {
+            <div>
+                <img src="@Url.Content("~/images/" + Model.Image)" alt="Product Image" style="max-width: 200px;" />
+               
+            </div>
+        }
+    </div>
+
+    <div class="form-group">
+        <input type="submit" value="Save Changes" class="btn btn-primary" />
+    </div>
+</form>
+
+<a asp-action="Index">Back to list Products</a>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script src="https://cdn.ckeditor.com/4.23.0-lts/standard/ckeditor.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            CKEDITOR.replace('Description');
+        });
+    </script>
+}

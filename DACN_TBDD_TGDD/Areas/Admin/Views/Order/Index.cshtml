@@ -1,0 +1,115 @@
+﻿@model IEnumerable<DACN_TBDD_TGDD.Models.OrderModel>
+
+@{
+    ViewData["Title"] = "Order List";
+}
+<style>
+    h2 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    table {
+        margin-top: 20px;
+    }
+
+    .table {
+        margin-bottom: 0;
+    }
+
+    .badge {
+        font-size: 1rem;
+        padding: 0.5em 0.75em;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+    }
+</style>
+
+<h2 class="my-4 text-center">Order List</h2>
+
+<div class="table-responsive">
+    <table class="table table-striped table-hover table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>ID</th>
+                <th>Order Code</th>
+                <th>User Name</th>
+                <th>Address</th>
+                <th>Phone</th>
+                <th>Created Date</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                foreach (var order in Model)
+                {
+                    <tr>
+                        <td>@order.Id</td>
+                        <td>@order.OrderCode</td>
+                        <td>@order.UserName</td>
+                        <td>@order.Address</td>
+                        <td>@order.PhoneNumber</td>
+                        <td>@order.CreatedDate.ToString("dd/MM/yyyy HH:mm")</td>
+                        <td>
+                            @if (order.Status == 1) // New Order
+                            {
+                                <span class="badge bg-secondary" style="background-color:darkgray;">New</span>
+                            }
+                            else if (order.Status == 2) // Destroy
+                            {
+                                <span class="badge bg-danger" style="background-color:red;">Cancelled</span>
+                            }
+                            else // Processed
+                            {
+                                <span class="badge bg-success" style="background-color:green;">Processed</span>
+                            }
+                        </td>
+                        <td>
+                            <a class="btn btn-primary btn-sm me-1" asp-controller="Order" asp-action="ViewOrder" asp-route-ordercode="@order.OrderCode">View</a>
+                            <form method="post" asp-controller="Order" asp-action="Delete" class="d-inline" onsubmit="return confirm('Are you sure you want to delete this order?');">
+                                <input type="hidden" name="id" value="@order.Id" />
+                                <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="8" class="text-center">No orders found</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+@if (ViewBag.Pager != null)
+{
+    <nav>
+        <ul class="pagination">
+            @if (ViewBag.Pager.CurrentPage > 1)
+            {
+                <li class="page-item">
+                    <a class="page-link" asp-action="Index" asp-route-page="@(ViewBag.Pager.CurrentPage - 1)">Previous</a>
+                </li>
+            }
+            @for (int i = ViewBag.Pager.StartPage; i <= ViewBag.Pager.EndPage; i++)
+            {
+                <li class="page-item @(ViewBag.Pager.CurrentPage == i ? "active" : "")">
+                    <a class="page-link" asp-action="Index" asp-route-page="@i">@i</a>
+                </li>
+            }
+            @if (ViewBag.Pager.CurrentPage < ViewBag.Pager.TotalPages)
+            {
+                <li class="page-item">
+                    <a class="page-link" asp-action="Index" asp-route-page="@(ViewBag.Pager.CurrentPage + 1)">Next</a>
+                </li>
+            }
+        </ul>
+    </nav>
+}

@@ -1,0 +1,152 @@
+﻿@model IEnumerable<DACN_TBDD_TGDD.Models.ContactModel>
+
+@{
+    ViewData["Title"] = "Contact Info";
+    var totalContacts = Model.Count(); // Tính tổng số liên hệ
+}
+<style>
+    /* General Styles */
+    h3 {
+        margin-bottom: 20px;
+    }
+
+    /* Table Styles */
+    .table {
+        margin-top: 20px;
+    }
+
+        .table thead {
+            background-color: #343a40; /* Dark background for header */
+            color: #ffffff; /* White text color */
+        }
+
+        .table img.contact-image {
+            max-width: 100px; /* Limit image width */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+    /* Pagination Styles */
+    .pagination {
+        justify-content: center; /* Center pagination controls */
+    }
+
+    .page-item.active .page-link {
+        background-color: #007bff; /* Highlight active page */
+        border-color: #007bff; /* Border color for active page */
+    }
+
+    .page-link {
+        color: #007bff; /* Default color for page links */
+    }
+
+        .page-link:hover {
+            background-color: #e9ecef; /* Background color on hover */
+            color: #007bff; /* Text color on hover */
+        }
+
+    /* Button Styles */
+    .btn-sm {
+        font-size: 0.875rem; /* Smaller font size for buttons */
+        padding: 0.25rem 0.5rem; /* Padding for small buttons */
+    }
+
+</style>
+
+<h3>List of Contacts</h3>
+<table id="contactTable" class="table table-striped table-bordered">
+    <thead class="thead-dark">
+        <tr>
+           
+            <th scope="col">Name</th>
+            <th scope="col">Description</th>
+            <th scope="col">Map</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Email</th>
+            <th scope="col">Logo</th>
+            <th scope="col">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                 <!-- Unique Id placeholder -->
+                <td>@item.Name</td>
+                <td>@Html.Raw(@item.Description)</td>
+                <td>
+                    @if (!string.IsNullOrEmpty(item.Map))
+                    {
+                        <!-- Ensure Map contains a full Google Maps embed iframe -->
+                        <iframe src="@item.Map" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    }
+                </td>
+                <td>@item.Phone</td>
+                <td>@item.Email</td>
+                <td><img src="~/media/logo/@item.LogoImg" alt="Contact Logo" class="contact-image" /></td>
+                <td>
+                    <!-- Link to the Edit action, passing the contact Id -->
+                    <a asp-controller="Contact" asp-action="Edit" asp-route-name="@item.Name" class="btn btn-warning btn-sm">Edit</a>
+
+                    <br />
+                    <!-- Link to the Delete action, passing the contact Id -->
+                    <form asp-action="DeleteConfirmed" method="post" style="display:inline;" onsubmit="return confirmDelete();">
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" name="id" value="@item.GetHashCode()" />
+                        <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="8" class="text-right"><strong>Total Contacts:</strong> @totalContacts</td>
+        </tr>
+    </tfoot>
+</table>
+@if (ViewBag.Pager != null)
+{
+    <nav>
+        <ul class="pagination">
+            @if (ViewBag.Pager.CurrentPage > 1)
+            {
+                <li class="page-item">
+                    <a class="page-link" asp-action="Index" asp-route-page="@(ViewBag.Pager.CurrentPage - 1)">Previous</a>
+                </li>
+            }
+            @for (int i = ViewBag.Pager.StartPage; i <= ViewBag.Pager.EndPage; i++)
+            {
+                <li class="page-item @(ViewBag.Pager.CurrentPage == i ? "active" : "")">
+                    <a class="page-link" asp-action="Index" asp-route-page="@i">@i</a>
+                </li>
+            }
+            @if (ViewBag.Pager.CurrentPage < ViewBag.Pager.TotalPages)
+            {
+                <li class="page-item">
+                    <a class="page-link" asp-action="Index" asp-route-page="@(ViewBag.Pager.CurrentPage + 1)">Next</a>
+                </li>
+            }
+        </ul>
+    </nav>
+}
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('#contactTable').DataTable({
+                dom: 'Bfrtip', // Controls the button placement
+                buttons: [
+                    'pdf', 'print', 'excelHtml5' // Export options
+                ],
+                paging: false, // Disable pagination
+                searching: false, // Disable search
+            });
+
+            // Handle any additional scripts or event handlers if needed
+        });
+
+        function confirmDelete() {
+            return confirm('Are you sure you want to delete this contact?');
+        }
+    </script>
+}

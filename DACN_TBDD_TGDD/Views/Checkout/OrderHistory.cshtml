@@ -1,0 +1,129 @@
+﻿@model IEnumerable<DACN_TBDD_TGDD.Models.OrderModel>
+
+@{
+    ViewBag.Title = "Order History";
+}
+<style>
+    /* General Styles */
+    .container {
+        max-width: 1000px; /* Adjust container width */
+        padding: 20px;
+    }
+
+    /* Table Styles */
+    .table {
+        border-radius: 0.5rem; /* Rounded corners */
+        overflow: hidden; /* Ensures rounded corners */
+    }
+
+        .table thead th {
+            background-color: #343a40; /* Dark header background */
+            color: #fff; /* White text color */
+            text-align: center; /* Center text */
+        }
+
+        .table tbody tr {
+            transition: background-color 0.3s; /* Smooth transition for hover effect */
+        }
+
+            .table tbody tr:hover {
+                background-color: #f8f9fa; /* Light gray background on hover */
+            }
+
+        .table th, .table td {
+            text-align: center; /* Center text in table cells */
+            vertical-align: middle; /* Vertically align text */
+        }
+
+    /* Badge Styles */
+    .badge-pill {
+        padding: 0.5em 1em; /* Adjust padding for pill badges */
+        font-size: 0.875em; /* Slightly smaller font size */
+    }
+
+    .badge-warning {
+        background-color: #ffc107; /* Custom yellow color for warnings */
+        color: #212529; /* Dark text color */
+    }
+
+    .badge-danger {
+        background-color: #dc3545; /* Red color for danger */
+        color: #fff; /* White text color */
+    }
+
+    .badge-success {
+        background-color: #28a745; /* Green color for success */
+        color: #fff; /* White text color */
+    }
+
+    /* Button Styles */
+    .btn-outline-info {
+        border-color: #17a2b8; /* Custom border color */
+        color: #17a2b8; /* Custom text color */
+    }
+
+        .btn-outline-info:hover {
+            background-color: #17a2b8; /* Custom background color on hover */
+            color: #fff; /* White text color on hover */
+        }
+
+    /* Alert Styles */
+    .alert-warning {
+        background-color: #fff3cd; /* Custom light yellow background */
+        color: #856404; /* Custom dark yellow text color */
+        border-color: #ffeeba; /* Custom border color */
+    }
+
+</style>
+
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Order History</h1>
+
+    @if (Model == null || !Model.Any())
+    {
+        <div class="alert alert-warning text-center" role="alert">
+            <p>No orders found.</p>
+        </div>
+    }
+    else
+    {
+        <div class="table-responsive">
+            <table class="table table-hover shadow-sm border rounded">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Order Code</th>
+                        <th scope="col">Created Date</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var order in Model)
+                    {
+                        <tr>
+                            <td>@order.OrderCode</td>
+                            <td>@order.CreatedDate.ToString("dd/MM/yyyy HH:mm")</td>
+                            <td>
+                                @if (order.Status == 1)
+                                {
+                                    <span class="badge badge-pill badge-warning">Waiting for confirmation</span>
+                                }
+                                else if (order.Status == 2)
+                                {
+                                    <span class="badge badge-pill badge-danger">Canceled</span>
+                                }
+                                else
+                                {
+                                    <span class="badge badge-pill badge-success">Success</span>
+                                }
+                            </td>
+                            <td>
+                                <a href="@Url.Action("ViewOrder", "Checkout", new { orderCode = order.OrderCode })" class="btn btn-outline-info btn-sm">View Details</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</div>

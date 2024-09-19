@@ -1,0 +1,55 @@
+﻿@model DACN_TBDD_TGDD.Models.ContactModel
+
+@{
+    ViewData["Title"] = "Edit Contact";
+}
+
+<h1>Edit Contact</h1>
+
+<form asp-action="Edit" method="post">
+    <div class="form-group">
+        <label asp-for="Name" class="control-label"></label>
+        <input asp-for="Name" class="form-control" readonly />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+   <div class="form-group">
+        <label asp-for="Map" class="control-label"></label>
+        <textarea asp-for="Map" class="form-control" rows="4" placeholder="Enter latitude,longitude or Google Maps embed code"></textarea>
+        <span asp-validation-for="Map" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label>Map Preview</label>
+        <iframe id="map-preview" src="" width="600" height="400" style="border:0;"></iframe>
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Save</button>
+        <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+    </div>
+</form>
+
+@section Scripts {
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const mapTextarea = document.querySelector('textarea[name="Map"]');
+            const mapIframe = document.getElementById('map-preview');
+
+            function updateMapPreview() {
+                const mapUrl = mapTextarea.value;
+                if (mapUrl) {
+                    mapIframe.src = mapUrl;
+                } else {
+                    mapIframe.src = ''; // Clear the map preview if the textarea is empty
+                }
+            }
+
+            // Update map preview on input change
+            mapTextarea.addEventListener('input', updateMapPreview);
+
+            // Initialize map preview with existing value (if any)
+            updateMapPreview();
+        });
+    </script>
+}

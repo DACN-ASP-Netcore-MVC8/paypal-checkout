@@ -1,0 +1,553 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\DACN_TBDD_TGDD.bundle.scp.css",
+      "PackagePath": "staticwebassets\\DACN_TBDD_TGDD.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\backend\\js\\site.js",
+      "PackagePath": "staticwebassets\\backend\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\css\\animate.css",
+      "PackagePath": "staticwebassets\\css\\animate.css"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\css\\main.css",
+      "PackagePath": "staticwebassets\\css\\main.css"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\css\\prettyPhoto.css",
+      "PackagePath": "staticwebassets\\css\\prettyPhoto.css"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\css\\price-range.css",
+      "PackagePath": "staticwebassets\\css\\price-range.css"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\css\\responsive.css",
+      "PackagePath": "staticwebassets\\css\\responsive.css"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\images\\08f457c0-b3e0-43bf-be2c-9d8384a07ce9_Pro M1 13inch Silver.png",
+      "PackagePath": "staticwebassets\\images\\08f457c0-b3e0-43bf-be2c-9d8384a07ce9_Pro M1 13inch Silver.png"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\images\\0e1199e0-3c9a-4825-a77d-01937ddb4faf_iphone-16-blue-600x600.png",
+      "PackagePath": "staticwebassets\\images\\0e1199e0-3c9a-4825-a77d-01937ddb4faf_iphone-16-blue-600x600.png"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\images\\0f37332d-75bb-4946-9edb-09503a6d0e12_samsung-galaxy-z-flip6-xanh-thumbn-600x600.jpg",
+      "PackagePath": "staticwebassets\\images\\0f37332d-75bb-4946-9edb-09503a6d0e12_samsung-galaxy-z-flip6-xanh-thumbn-600x600.jpg"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\images\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\images\\10.jpg",
+      "PackagePath": "staticwebassets\\images\\10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\images\\16c6d430-0a82-4c14-8c48-e8038823f852_iphone-14-pro-max-tim-thumb-600x600.jpg",
+      "PackagePath": "staticwebassets\\images\\16c6d430-0a82-4c14-8c48-e8038823f852_iphone-14-pro-max-tim-thumb-600x600.jpg"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\images\\1f8ddf0f-5c3b-4a52-b57b-c2566f44c638_samsung-galaxy-a55-5g-xanh-thumb-1-600x600.jpg",
+      "PackagePath": "staticwebassets\\images\\1f8ddf0f-5c3b-4a52-b57b-c2566f44c638_samsung-galaxy-a55-5g-xanh-thumb-1-600x600.jpg"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\images\\2.jpg",
+      "PackagePath": "staticwebassets\\images\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\images\\20.jpg",
+      "PackagePath": "staticwebassets\\images\\20.jpg"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\images\\21.jpg",
+      "PackagePath": "staticwebassets\\images\\21.jpg"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\images\\22.jpg",
+      "PackagePath": "staticwebassets\\images\\22.jpg"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\images\\29fd45d4-7bea-4448-b0c5-0b8255d21c06_ban-phim-magic-keyboard-apple-mk2a3-thumb1-600x600.jpg",
+      "PackagePath": "staticwebassets\\images\\29fd45d4-7bea-4448-b0c5-0b8255d21c06_ban-phim-magic-keyboard-apple-mk2a3-thumb1-600x600.jpg"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\images\\2ea604b3-da3e-4032-b9eb-3fec1b6f9afb_hp-tp014018d-i3-8x3r4pa-thumb-bac-1-1-600x600.jpg",
+      "PackagePath": "staticwebassets\\images\\2ea604b3-da3e-4032-b9eb-3fec1b6f9afb_hp-tp014018d-i3-8x3r4pa-thumb-bac-1-1-600x600.jpg"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\images\\30.jpg",
+      "PackagePath": "staticwebassets\\images\\30.jpg"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\images\\34419aeb-ef85-46c6-9513-fd5b81e09fde_oppo-a78-xanh-thumb-1-600x600.jpg",
+      "PackagePath": "staticwebassets\\images\\34419aeb-ef85-46c6-9513-fd5b81e09fde_oppo-a78-xanh-thumb-1-600x600.jpg"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\images\\3d1ef269-0edb-4819-9e27-9bed4fcd8ee3_apple-watch-ultra-lte-49mm-vien-titanium-day-ocean-trang-thumb-4-1-600x600.jpg",
+      "PackagePath": "staticwebassets\\images\\3d1ef269-0edb-4819-9e27-9bed4fcd8ee3_apple-watch-ultra-lte-49mm-vien-titanium-day-ocean-trang-thumb-4-1-600x600.jpg"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\images\\43cdf33d-810e-4082-9b0d-4e4431503358_samsung-galaxy-a9-plus-den-thumb-600x600.jpg",
+      "PackagePath": "staticwebassets\\images\\43cdf33d-810e-4082-9b0d-4e4431503358_samsung-galaxy-a9-plus-den-thumb-600x600.jpg"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\images\\61c2b860-d22b-483c-a88a-f4d708165f6c_redmi-13-yellow-thumb-600x600.jpg",
+      "PackagePath": "staticwebassets\\images\\61c2b860-d22b-483c-a88a-f4d708165f6c_redmi-13-yellow-thumb-600x600.jpg"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\images\\63bc0595-c89a-4357-9ff5-bbfa9c77a84b_loa-bluetooth-xiaomi-sound-outdoor-thumb-1-600x600.jpg",
+      "PackagePath": "staticwebassets\\images\\63bc0595-c89a-4357-9ff5-bbfa9c77a84b_loa-bluetooth-xiaomi-sound-outdoor-thumb-1-600x600.jpg"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\images\\6972b524-cb07-4061-ac44-13f79fd05ac6_magic-keybroad-cho-ipad-air-m2-13-inch-600x600.jpg",
+      "PackagePath": "staticwebassets\\images\\6972b524-cb07-4061-ac44-13f79fd05ac6_magic-keybroad-cho-ipad-air-m2-13-inch-600x600.jpg"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\images\\6980b0cd-148b-47f8-b010-518d2861f68e_mac-mini-m2-z16k-thumb-600x600.jpg",
+      "PackagePath": "staticwebassets\\images\\6980b0cd-148b-47f8-b010-518d2861f68e_mac-mini-m2-z16k-thumb-600x600.jpg"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\images\\7c6ceeac-91de-4b28-b4a5-b4c3c367b9dd_asus-aio-a3402wbak-i3-wpc048w-thumb-600x600.jpg",
+      "PackagePath": "staticwebassets\\images\\7c6ceeac-91de-4b28-b4a5-b4c3c367b9dd_asus-aio-a3402wbak-i3-wpc048w-thumb-600x600.jpg"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\images\\87d69ef8-0c60-43c1-a756-6b5b87fc347d_download.jpg",
+      "PackagePath": "staticwebassets\\images\\87d69ef8-0c60-43c1-a756-6b5b87fc347d_download.jpg"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\images\\91af2f9a-b35f-4594-9c37-1201ec79d49b_iphone-16-blue-600x600.png",
+      "PackagePath": "staticwebassets\\images\\91af2f9a-b35f-4594-9c37-1201ec79d49b_iphone-16-blue-600x600.png"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\images\\94b954da-70c4-48e7-9932-a6f0ffc1baa3_apple-watch-se-2023-40mm-vien-nhom-day-silicone-xanh-duong-thumb-1-600x600.jpg",
+      "PackagePath": "staticwebassets\\images\\94b954da-70c4-48e7-9932-a6f0ffc1baa3_apple-watch-se-2023-40mm-vien-nhom-day-silicone-xanh-duong-thumb-1-600x600.jpg"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\images\\955d0349-3219-415f-bab4-853dee14e9d9_iphone-15-pro-max-gold-thumbnew-200x200.jpg",
+      "PackagePath": "staticwebassets\\images\\955d0349-3219-415f-bab4-853dee14e9d9_iphone-15-pro-max-gold-thumbnew-200x200.jpg"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\images\\a73f1289-b4b6-44cc-a0f1-cb0ec1485db4_tai-nghe-bluetooth-airpods-3-lightning-charge-apple-mpny3-trang-thumb1-600x6001.-600x600.jpeg",
+      "PackagePath": "staticwebassets\\images\\a73f1289-b4b6-44cc-a0f1-cb0ec1485db4_tai-nghe-bluetooth-airpods-3-lightning-charge-apple-mpny3-trang-thumb1-600x6001.-600x600.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\images\\be401798-1d3f-4062-973b-364b63b3e3a6_iphone-15-plus-xanh-la-128gb-thumb-200x200.jpg",
+      "PackagePath": "staticwebassets\\images\\be401798-1d3f-4062-973b-364b63b3e3a6_iphone-15-plus-xanh-la-128gb-thumb-200x200.jpg"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\images\\d172138d-f1c6-41bc-9e24-a2d3795aa8fe_tai-nghe-bluetooth-true-wireless-samsung-galaxy-buds-3-pro-r630n-100724-082455-600x600-1-600x600.jpg",
+      "PackagePath": "staticwebassets\\images\\d172138d-f1c6-41bc-9e24-a2d3795aa8fe_tai-nghe-bluetooth-true-wireless-samsung-galaxy-buds-3-pro-r630n-100724-082455-600x600-1-600x600.jpg"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\images\\d64dbf9b-823d-4807-80af-abc18574a993_samsung-galaxy-s23-ultra-green-thumbnew-600x600.jpg",
+      "PackagePath": "staticwebassets\\images\\d64dbf9b-823d-4807-80af-abc18574a993_samsung-galaxy-s23-ultra-green-thumbnew-600x600.jpg"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\images\\e1096942-6ea1-4351-bb58-79a30b76ea07_oppo-pad-neo-6gb-thumb-1-600x600.jpg",
+      "PackagePath": "staticwebassets\\images\\e1096942-6ea1-4351-bb58-79a30b76ea07_oppo-pad-neo-6gb-thumb-1-600x600.jpg"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\images\\e19ba67d-bc56-4362-8d2f-92df53b0ec57_samsung-galaxy-watch-ultra-cam-tn-600x600.jpg",
+      "PackagePath": "staticwebassets\\images\\e19ba67d-bc56-4362-8d2f-92df53b0ec57_samsung-galaxy-watch-ultra-cam-tn-600x600.jpg"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\images\\e512861b-c8e1-4e87-896b-abc74bb49443_pin-sac-du-phong-polymer-10000mah-ava-ds808a-thumb-600x600.jpg",
+      "PackagePath": "staticwebassets\\images\\e512861b-c8e1-4e87-896b-abc74bb49443_pin-sac-du-phong-polymer-10000mah-ava-ds808a-thumb-600x600.jpg"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\images\\e6cb17fd-4626-4aeb-a416-697f6741f897_iPhone-14-thumb-tim-1-600x600.jpg",
+      "PackagePath": "staticwebassets\\images\\e6cb17fd-4626-4aeb-a416-697f6741f897_iPhone-14-thumb-tim-1-600x600.jpg"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\images\\ea43b78d-a045-4745-b498-5e6c11b29c27_ipad-air-11-inch-m2-wifi-blue-thumb-600x600.jpg",
+      "PackagePath": "staticwebassets\\images\\ea43b78d-a045-4745-b498-5e6c11b29c27_ipad-air-11-inch-m2-wifi-blue-thumb-600x600.jpg"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\images\\fe5c4990-b2ea-4252-85c3-ea106b3e874b_mi-band-8-thumb-trang-30-600x600.jpg",
+      "PackagePath": "staticwebassets\\images\\fe5c4990-b2ea-4252-85c3-ea106b3e874b_mi-band-8-thumb-trang-30-600x600.jpg"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\images\\girl1.jpg",
+      "PackagePath": "staticwebassets\\images\\girl1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\images\\iframe1.png",
+      "PackagePath": "staticwebassets\\images\\iframe1.png"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\images\\iframe2.png",
+      "PackagePath": "staticwebassets\\images\\iframe2.png"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\images\\iframe3.png",
+      "PackagePath": "staticwebassets\\images\\iframe3.png"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\images\\iframe4.png",
+      "PackagePath": "staticwebassets\\images\\iframe4.png"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\images\\map.png",
+      "PackagePath": "staticwebassets\\images\\map.png"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\images\\samsung-galaxy-z-fold6-xam-1-1.jpg",
+      "PackagePath": "staticwebassets\\images\\samsung-galaxy-z-fold6-xam-1-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\images\\ss1.jpg",
+      "PackagePath": "staticwebassets\\images\\ss1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\js\\contact.js",
+      "PackagePath": "staticwebassets\\js\\contact.js"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\js\\gmaps.js",
+      "PackagePath": "staticwebassets\\js\\gmaps.js"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\js\\html5shiv.js",
+      "PackagePath": "staticwebassets\\js\\html5shiv.js"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\js\\jquery.js",
+      "PackagePath": "staticwebassets\\js\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\js\\jquery.prettyPhoto.js",
+      "PackagePath": "staticwebassets\\js\\jquery.prettyPhoto.js"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\js\\jquery.scrollUp.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.scrollUp.min.js"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\js\\price-range.js",
+      "PackagePath": "staticwebassets\\js\\price-range.js"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\media\\logo\\logo1.png",
+      "PackagePath": "staticwebassets\\media\\logo\\logo1.png"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\media\\products\\1.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\media\\products\\10.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\media\\products\\2.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\media\\products\\20.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\20.jpg"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\media\\products\\21.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\21.jpg"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\media\\products\\22.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\22.jpg"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\media\\products\\30.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\30.jpg"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\media\\products\\7d786fe5-7280-433f-95ab-ddfd540f172e_21.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\7d786fe5-7280-433f-95ab-ddfd540f172e_21.jpg"
+    },
+    {
+      "Id": "C:\\Users\\thien\\source\\repos\\DACN_TBDD_TGDD\\DACN_TBDD_TGDD\\wwwroot\\media\\products\\ss1.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\ss1.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.DACN_TBDD_TGDD.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.DACN_TBDD_TGDD.props",
+      "PackagePath": "build\\DACN_TBDD_TGDD.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.DACN_TBDD_TGDD.props",
+      "PackagePath": "buildMultiTargeting\\DACN_TBDD_TGDD.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.DACN_TBDD_TGDD.props",
+      "PackagePath": "buildTransitive\\DACN_TBDD_TGDD.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

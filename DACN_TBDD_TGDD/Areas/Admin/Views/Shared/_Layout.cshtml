@@ -1,0 +1,160 @@
+﻿	<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>@ViewData["title"]-@User.Identity.Name</title>
+	<link href="~/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+	<link href="~/css/prettyPhoto.css" rel="stylesheet">
+	<link href="~/css/price-range.css" rel="stylesheet">
+	<link href="~/css/animate.css" rel="stylesheet">
+	<link href="~/css/main.css" rel="stylesheet">
+	<link href="~/css/responsive.css" rel="stylesheet">
+	<!-- DataTables Core CSS -->
+	<link href="https://cdn.datatables.net/v/dt/dt-2.1.5/datatables.min.css" rel="stylesheet">
+
+	<!-- DataTables Buttons CSS -->
+	<link href="https://cdn.datatables.net/buttons/2.1.5/css/buttons.dataTables.min.css" rel="stylesheet">
+
+
+	<link rel="shortcut icon" href="images/ico/favicon.ico">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->	
+
+<body>
+	<header id="header">
+		<!--header-->
+		<div class="header_top">
+			<!--header_top-->
+			<div class="container">
+				<div class="row">
+					
+				</div>
+			</div>
+		</div><!--/header_top-->
+
+		<div class="header-middle">
+			<!--header-middle-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="logo pull-left">
+							<a href="index.html"><img src="images/home/logo.png" alt="" /></a>
+						</div>
+						
+					</div>
+					
+				</div>
+			</div>
+		</div><!--/header-middle-->
+
+		<div class="header-bottom">
+			<!--header-bottom-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-9">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<div class="mainmenu pull-left">
+							<ul class="nav navbar-nav collapse navbar-collapse">
+								<li><a asp-controller="Product" asp-action="Index" class="active"><i class="fa-solid fa-house"></i>Home</a></li>
+								 <li class="dropdown">
+									<a asp-controller="Product" asp-action="Index"><i class="fa-solid fa-shop"></i> Shop<i class="fa fa-angle-down"></i></a>
+									<ul role="menu" class="sub-menu">
+										<li><a asp-controller="Product"><i class="fa-brands fa-product-hunt"></i>roducts</a></li>
+										<li><a asp-controller="Category"><i class="fa-solid fa-c"></i>ategories</a></li>
+										<li><a asp-controller="Brand"><i class="fa-solid fa-b"></i>rands</a></li>
+									</ul>
+								</li>
+				
+								<li><a asp-controller="Order" asp-action="Index">Orders</a></li>
+								<li><a asp-controller="User" asp-action="Index"><i class="fa-regular fa-user"></i> User</a></li>
+								<li><a asp-controller="Order" asp-action="RevenueToday"><i class="fa-solid fa-money-bill"></i> Today</a></li>
+								<li><a asp-controller="Contact" asp-action="Index"><i class="fa-brands fa-rocketchat"></i> Contact</a></li>
+								
+
+								
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="search_box pull-right">
+							<form asp-controller="Product" asp-action="Search" method="get" class="search_box pull-right">
+								<input type="text" name="searchTerm" value="@ViewBag.SearchTerm" placeholder="Search" />
+								<button type="submit" class="btn btn-primary" style="margin-top:3px">Search</button>
+							</form>
+						</div>
+					</div>
+					
+
+				</div>
+			</div>
+		</div><!--/header-bottom-->
+	</header><!--/header-->
+
+	<section>
+		<div class="container">
+			<div class="row">
+				
+				@RenderBody() 
+			</div>
+		</div>
+	</section>
+
+	<footer id="footer">
+		
+
+	</footer><!--/Footer-->
+
+	<script src="~/js/jquery.js"></script>
+	<script src="~/js/bootstrap.min.js"></script>
+	<script src="~/js/jquery.scrollUp.min.js"></script>
+	<script src="~/js/price-range.js"></script>
+	<script src="~/js/jquery.prettyPhoto.js"></script>
+	<script src="~/js/main.js"></script>
+	<script src="~/backend/js/site.js"></script>
+
+	<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+
+	<!-- DataTables Buttons -->
+	<script src="https://cdn.datatables.net/buttons/2.1.5/js/dataTables.buttons.min.js"></script>
+
+	<!-- JSZip for Excel Export -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+
+	<!-- pdfmake for PDF Export -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
+
+	<!-- HTML5 Export Buttons -->
+	<script src="https://cdn.datatables.net/buttons/2.1.5/js/buttons.html5.min.js"></script>
+
+	<!-- Print Button -->
+	<script src="https://cdn.datatables.net/buttons/2.1.5/js/buttons.print.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('#myTable').DataTable({
+				dom: 'Bfrtip', // This controls the button placement
+				buttons: [
+					'pdf', 'print'
+				]
+			});
+		});
+	</script>
+
+	@await RenderSectionAsync("Scripts",required:false) 
+</body>
+</html>
+

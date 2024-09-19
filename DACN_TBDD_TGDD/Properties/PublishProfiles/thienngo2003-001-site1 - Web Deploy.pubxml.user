@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA2bk5bmvYdk6dUBFLRqMyVQAAAAACAAAAAAAQZgAAAAEAACAAAADq/lrF33vbuxwuLDaUOLtj7bVZZDSDRScnJAl2SpLR7gAAAAAOgAAAAAIAACAAAADwqAl8TGsF8VazZMDg76UZLYfp6UnLIHCMo07TevnLyiAAAACSImvyjVjPEyT1v836Ur3k1yED5fVFroKkEfeS+olfG0AAAADFAVavemxLUrNb/Cj1i+p/sTOI5m1icbWY4GlNnq9IPCB5+yAKe7ZMaOtBg9aiRhAExODQSK6k1qwz6xQ29sm5</EncryptedPassword>
+    <History>True|2024-09-06T06:38:45.8287570Z||;True|2024-09-06T13:35:11.8593987+07:00||;True|2024-09-06T13:01:17.2740611+07:00||;True|2024-09-06T12:24:47.5163079+07:00||;True|2024-09-06T12:22:15.3119977+07:00||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=SQL8020.site4now.net%3bInitial Catalog=db_aacef9_login%3bUser ID=db_aacef9_login_admin%3bPassword=22122003Thien%3bTrust Server Certificate=True</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

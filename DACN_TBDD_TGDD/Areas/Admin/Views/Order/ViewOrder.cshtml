@@ -1,0 +1,110 @@
+﻿@model IEnumerable<DACN_TBDD_TGDD.Models.OrderDetails>
+
+@{
+    ViewData["Title"] = "Bill"; // Updated title
+    decimal total = 0;
+}
+
+<h2 class="mt-4">Bill Details</h2>
+
+<!-- Order Details Table -->
+<div class="table-responsive mt-4">
+    <table id="orderDetailsTable" class="table table-striped table-hover table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>ID</th>
+                <th>Product ID</th>
+                <th>Product Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                foreach (var item in Model)
+                {
+                    var subtotal = item.Quantity * item.Price;
+                    total += subtotal;
+                    <tr>
+                        <input type="hidden" class="getOrderCode" value="@item.OrderCode" />
+                        <td>@item.Id</td>
+                        <td>@item.ProductId</td>
+                        <td>@item.Product.Name</td>
+                        <td>@string.Format("${0:0.00}", item.Price)</td>
+                        <td>@item.Quantity</td>
+                        <td>@string.Format("${0:0.00}", subtotal)</td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="6" class="text-center text-muted">No details found for this order</td>
+                </tr>
+            }
+        </tbody>
+        <tfoot>
+            <tr class="table-secondary">
+                <td colspan="5" class="text-end"><strong>Total:</strong></td>
+                <td><strong>@string.Format("${0:0.00}", total)</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+
+<!-- Order Status Update Form -->
+<div class="form-group mt-4">
+    <label for="orderStatus" class="form-label">Update Order Status:</label>
+    <select id="orderStatus" class="form-select select-update-order">
+        <option value="1" selected>New Order</option>
+        <option value="3">Processed</option>
+        <option value="2">Cancelled</option>
+    </select>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.datatables.net/buttons/2.3.6/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.print.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#orderDetailsTable').DataTable({
+                dom: 'Bfrtip', // This controls the button placement
+                buttons: [
+                    'pdf', 'print', 'excelHtml5' // Use 'excelHtml5' for Excel export
+                ]
+            });
+
+            // Handle the status dropdown change
+            $('.select-update-order').change(function () {
+                var status = $(this).val();
+                var orderCode = $('.getOrderCode:first').val();
+
+                $.ajax({
+                    type: "POST",
+                    url: "@Url.Action("UpdateOrderStatus", "Order")",
+                    data: {
+                        status: status,
+                        orderCode: orderCode
+                    },
+                    success: function (response) {
+                        if (response.success) {
+                            alert("Order status updated successfully!");
+                        } else {
+                            alert("Error: " + response.message);
+                        }
+                    },
+                    error: function (xhr, status, error) {
+                        alert("Error updating order status: " + error);
+                    }
+                });
+            });
+        });
+    </script>
+}

@@ -1,0 +1,241 @@
+﻿@using DACN_TBDD_TGDD.Models.ViewModels
+@model CartItemViewModel
+
+<head>
+    <!-- SweetAlert2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+</body>
+
+<style>
+    /* General Styles */
+    .cart-summary {
+        margin-bottom: 20px;
+    }
+
+        .cart-summary p {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+    .table {
+        margin-top: 20px;
+    }
+
+        /* Table Styles */
+        .table thead {
+            background-color: #343a40; /* Dark background for header */
+            color: #ffffff; /* White text color */
+        }
+
+        .table tbody tr:hover {
+            background-color: #f8f9fa; /* Light gray background on hover */
+        }
+
+        .table img.cart-item-image {
+            max-width: 100px; /* Limit image width */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+    /* Quantity Controls */
+    .quantity-controls {
+        display: flex;
+        align-items: center;
+    }
+
+    .cart_quantity_input {
+        width: 50px; /* Fixed width for input */
+        text-align: center; /* Center text in input */
+        border: 1px solid #ced4da; /* Border color */
+    }
+
+    /* Summary Styles */
+    .cart-summary-total {
+        font-size: 1.5rem; /* Larger font size for total */
+        font-weight: bold;
+    }
+
+    /* Buttons */
+    .btn-secondary {
+        background-color: #6c757d; /* Gray button background */
+        color: #ffffff; /* White text color */
+    }
+
+        .btn-secondary:hover {
+            background-color: #5a6268; /* Darker gray on hover */
+        }
+
+    .btn-primary {
+        background-color: #007bff; /* Blue button background */
+        color: #ffffff; /* White text color */
+    }
+
+        .btn-primary:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+
+    .btn-danger {
+        background-color: #dc3545; /* Red button background */
+        color: #ffffff; /* White text color */
+    }
+
+        .btn-danger:hover {
+            background-color: #c82333; /* Darker red on hover */
+        }
+
+</style>
+
+<h4>Cart</h4>
+<div class="cart-summary">
+    <p><strong>Total Products:</strong> @Model.CartItems.Count()</p>
+</div>
+
+<table id="cartTable" class="table table-striped table-bordered">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Image</th>
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Total</th>
+            <th scope="col">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.CartItems.Any())
+        {
+            foreach (var item in Model.CartItems)
+            {
+                var itemTotal = item.Quantity * item.Price;
+                <tr>
+                    <td>
+                        <a href="#"><img src="~/images/@item.Image" alt="@item.ProductName" class="cart-item-image" /></a>
+                    </td>
+                    <td>@item.ProductName</td>
+                    <td>$@item.Price</td>
+                    <td>
+                        <div class="quantity-controls">
+                            <a class="btn btn-secondary btn-sm" asp-controller="Cart" asp-action="Increase" asp-route-id="@item.ProductId"> + </a>
+                            <input class="cart_quantity_input" type="text" name="quantity" value="@item.Quantity" autocomplete="off" size="2">
+                            <a class="btn btn-secondary btn-sm" asp-controller="Cart" asp-action="Decrease" asp-route-id="@item.ProductId"> - </a>
+                        </div>
+                    </td>
+                    <td>$@itemTotal</td>
+                    <td>
+                        <a class="btn btn-danger btn-sm" asp-controller="Cart" asp-action="Remove" asp-route-id="@item.ProductId">Remove</a>
+                    </td>
+                </tr>
+            }
+
+            <tr>
+                <td colspan="5" class="text-left cart-summary-total">
+                    <strong>Grand Total:</strong> @Model.GrandTotal.ToString("C")
+                </td>
+                <td>
+                    <a id="clearCartButton" class="btn btn-danger btn-sm" href="javascript:void(0);">Clear</a>
+                </td>
+                <td>
+                    <a class="btn btn-danger btn-sm" asp-controller="Checkout" asp-action="Checkout">Checkout COD</a>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5" class="text-left">
+                    <strong>Or pay with PayPal:</strong>
+                </td>
+                <td>
+                    <a asp-action="PaymentWithPaypal" asp-controller="Cart" class="btn btn-primary"><i class="fa fa-paypal" aria-hidden="true"></i>Pay with PayPal</a>
+                </td>
+            </tr>
+        }
+        else
+        {
+            <tr>
+                <td colspan="6">
+                    <h4 class="text-center">Your Cart is Empty.</h4>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+       
+    @if (TempData["success"] != null || TempData["SuccessMessageCart"] != null)
+    {
+        <text>
+                Swal.fire({
+                    title: 'Success!',
+                    text: '@TempData["success"]',
+                    icon: 'success',
+                    confirmButtonText: 'OK' 
+                });
+        </text>
+    }
+
+
+    @if (TempData["error"] != null || TempData["ErrorMessageCart"] != null )
+    {
+        <text>
+                Swal.fire({
+                    title: 'Error!',
+                    text: '@TempData["error"]',
+                    icon: 'error',
+                    confirmButtonText: 'OK'
+                });
+        </text>
+    }
+    @{
+        var errorMessage = TempData["ErrorMessage"] as string;
+    }
+
+    @if (TempData["ErrorMessage"] != null)
+    {
+               <text>
+                    Swal.fire({
+                        title: 'Error!',
+                        text: '@errorMessage',
+                        icon: 'error',
+                        confirmButtonText: 'OK'
+                    });
+        </text>
+    }
+
+           
+    @if (TempData["QuantitySuccessMessage"] != null)
+    {
+        <text>
+                Swal.fire("Edit successful!");
+        </text>
+    }
+
+            // Handle Clear Cart button click
+            document.getElementById('clearCartButton').addEventListener('click', function () {
+                Swal.fire({
+                    title: 'Are you sure?',
+                    text: "You won't be able to revert this!",
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonText: 'Yes, clear it!',
+                    cancelButtonText: 'No, cancel!',
+                    reverseButtons: true
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        // Redirect to the Clear action
+                        window.location.href = '@Url.Action("Clear", "Cart")';
+                    } else if (result.dismiss === Swal.DismissReason.cancel) {
+                        Swal.fire(
+                            'Cancelled',
+                            'Your cart is safe :)',
+                            'error'
+                        );
+                    }
+                });
+            });
+    });
+</script>

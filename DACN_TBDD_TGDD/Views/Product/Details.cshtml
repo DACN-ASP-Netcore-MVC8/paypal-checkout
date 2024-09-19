@@ -1,0 +1,188 @@
+﻿@model DACN_TBDD_TGDD.Models.ViewModels.ProductDetailsViewModel
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- SweetAlert2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+    <link href="~/css/style.css" rel="stylesheet" /> <!-- Optional: Your own CSS -->
+</head>
+<body>
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+
+    @if (TempData["success"] != null)
+    {
+        <script>
+            Swal.fire({
+                title: 'Success!',
+                text: '@TempData["success"]',
+                icon: 'success',
+                confirmButtonText: 'OK'
+            });
+        </script>
+    }
+
+    @if (TempData["error"] != null)
+    {
+        <script>
+            Swal.fire({
+                title: 'Error!',
+                text: '@TempData["error"]',
+                icon: 'error',
+                confirmButtonText: 'OK'
+            });
+        </script>
+    }
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                @Html.Partial("_SidebarPartial")
+            </div>
+
+            <div class="col-sm-9 padding-right">
+                <div class="product-details">
+                    <!-- Product Details -->
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <div class="view-product">
+                                <img src="~/images/@Model.ProductDetails.Image" alt="@Model.ProductDetails.Name" />
+                                <h3>ZOOM</h3>
+                            </div>
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="product-information">
+                                <!-- Product Information -->
+                                <img src="~/images/@Model.ProductDetails.Image" class="newarrival" alt="@Model.ProductDetails.Name" />
+                                <h2>@Model.ProductDetails.Name</h2>
+                                <span>
+                                    <span>$@Model.ProductDetails.Price</span>
+                                    <a class="btn btn-default add-to-cart" asp-action="Add" asp-controller="Cart" asp-route-Id="@Model.ProductDetails.Id">
+                                        <i class="fa fa-shopping-cart"></i> Add to cart
+                                    </a>
+                                </span>
+                                <p><b>Brand: </b> @Model.ProductDetails.Brand.Name</p>
+                                <p><b>Discount:</b> $@Model.ProductDetails.Discount</p>
+                                <a href=""><img src="~/images/product-details/share.png" class="share img-responsive" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <!-- Category Tab -->
+                    <div class="category-tab shop-details-tab">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <ul class="nav nav-tabs">
+                                    <li><a href="#details" data-toggle="tab">Details</a></li>
+                                    <li><a href="#reviews" data-toggle="tab">Reviews</a></li>
+                                    <li><a href="#allreview" data-toggle="tab">All Reviews</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="tab-content">
+                            <div class="tab-pane fade" id="details">
+                                <p><b>Description:</b> @Model.ProductDetails.Description</p>
+                            </div>
+
+                            <div class="tab-pane fade" id="reviews">
+                                <div class="col-sm-12">
+                                    <p><b>Write Your Review</b></p>
+
+                                    <form asp-action="CommentProduct" asp-controller="Product" method="POST">
+                                        @Html.AntiForgeryToken()
+                                        <input type="hidden" name="ProductId" value="@Model.ProductDetails.Id" />
+
+                                        <div class="form-group">
+                                            <label asp-for="Name">Your Name</label>
+                                            <input asp-for="Name" class="form-control" />
+                                            <span asp-validation-for="Name" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label asp-for="Email">Your Email</label>
+                                            <input asp-for="Email" class="form-control" />
+                                            <span asp-validation-for="Email" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label asp-for="Comment">Your Comment</label>
+                                            <textarea asp-for="Comment" class="form-control"></textarea>
+                                            <span asp-validation-for="Comment" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label asp-for="Start">Rating (1-5)</label>
+                                            <input asp-for="Start" class="form-control" type="number" min="1" max="5" />
+                                            <span asp-validation-for="Start" class="text-danger"></span>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Submit Review</button>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="allreview">
+                                <div class="col-sm-12">
+                                    <style>
+                                        #allreview {
+                                            color: white;
+                                        }
+
+                                            #allreview .media-body {
+                                                color: white;
+                                            }
+
+                                            #allreview .ratings .fa-star {
+                                                color: #f5c518; /* Gold color for stars */
+                                            }
+                                    </style>
+                                    @if (Model.ProductReviews != null && Model.ProductReviews.Any())
+                                    {
+                                        <ul class="list-unstyled">
+                                            @foreach (var review in Model.ProductReviews)
+                                            {
+                                                <li class="media mb-4">
+                                                    <div class="media-body">
+                                                        <h5 class="mt-0 mb-1">@review.Name</h5>
+                                                        <div class="ratings">
+
+                                                            @if (review.Start >= 1)
+                                                            {
+                                                                <span class="fa fa-star checked"></span>
+                                                            }
+                                                            @if (review.Start >= 2)
+                                                            {
+                                                                <span class="fa fa-star checked"></span>
+                                                            }
+                                                            @if (review.Start >= 3)
+                                                            {
+                                                                <span class="fa fa-star checked"></span>
+                                                            }
+                                                            @if (review.Start >= 4)
+                                                            {
+                                                                <span class="fa fa-star checked"></span>
+                                                            }
+                                                            @if (review.Start >= 5)
+                                                            {
+                                                                <span class="fa fa-star checked"></span>
+                                                            }
+                                                        </div>
+                                                        <p>@review.Comment</p>
+                                                    </div>
+                                                </li>
+                                            }
+                                        </ul>
+                                    }
+                                    else
+                                    {
+                                        <p>No reviews yet. Be the first to review this product!</p>
+                                    }
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div><!--/product-details-->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
